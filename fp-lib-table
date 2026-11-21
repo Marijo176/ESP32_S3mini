@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "ESD7104MUTAG") (type "KiCad") (uri "${KIPRJMOD}/ESD7104MUTAG.pretty") (options "") (descr ""))
+	(lib (name "Library") (type "KiCad") (uri "${KIPRJMOD}/ESD7104MUTAG/Library.pretty") (options "") (descr ""))
+)
