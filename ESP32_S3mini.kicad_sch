@@ -2734,29 +2734,29 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -5.08 8.382 0)
+			(property "Reference" "U4"
+				(at -10.16 -11.176 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify right)
 				)
 			)
 			(property "Value" "ESD7104MUTAG"
-				(at -5.08 -12.7 0)
+				(at -10.16 -8.636 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify right)
 				)
 			)
-			(property "Footprint" "ESD7104MUTAG:IC_ESD7104MUTAG"
+			(property "Footprint" "Library:IC_ESD7104MUTAG"
 				(at -61.976 29.21 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2890,8 +2890,8 @@
 			)
 			(symbol "ESD7104MUTAG_0_0"
 				(rectangle
-					(start -5.08 -10.16)
-					(end 5.08 7.62)
+					(start -7.62 7.62)
+					(end 5.08 -10.16)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3002,6 +3002,44 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "ESD7104MUTAG_1_0"
+				(pin passive line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "I/O_9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -12.7 5.08 0)
+					(length 5.08)
+					(name "I/O_10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4533,7 +4571,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_MEC_5E"
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -4544,7 +4585,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at 0.635 5.715 0)
+				(at 1.27 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4554,8 +4595,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "SW_MEC_5E"
-				(at 0 -3.175 0)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4565,7 +4606,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 7.62 0)
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4575,8 +4616,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5E.pdf"
-				(at 0 7.62 0)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4586,7 +4627,7 @@
 					)
 				)
 			)
-			(property "Description" "MEC 5E single pole normally-open tactile switch"
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4608,44 +4649,9 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SW*MEC*5G*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_MEC_5E_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy -2.54 2.54) (xy -2.286 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.286 3.81) (xy 2.286 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "SW_Push_0_1"
 				(circle
-					(center -1.778 2.54)
+					(center -2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -4657,7 +4663,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 3.81) (xy 0 5.588)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
 						(width 0)
@@ -4668,7 +4674,7 @@
 					)
 				)
 				(circle
-					(center 1.778 2.54)
+					(center 2.032 0)
 					(radius 0.508)
 					(stroke
 						(width 0)
@@ -4680,7 +4686,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 0) (xy 2.54 2.54) (xy 2.286 2.54)
+						(xy 2.54 1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -4691,7 +4697,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -4709,7 +4715,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -4719,42 +4725,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5205,12 +5175,6 @@
 		(uuid "27d64b07-85b3-4bf7-aaec-563eb4a84094")
 	)
 	(junction
-		(at 156.21 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3579dd0e-229e-4e85-8472-2673db36071b")
-	)
-	(junction
 		(at 27.94 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5221,12 +5185,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4f6ec01f-e14e-4e56-8db3-0f42a3691924")
-	)
-	(junction
-		(at 146.05 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f7aa5d5-2393-45cc-b6cb-92f0d428db5b")
 	)
 	(junction
 		(at 185.42 129.54)
@@ -5277,12 +5235,6 @@
 		(uuid "a7dc8b02-406c-4e77-a9a0-37971a5f1f39")
 	)
 	(junction
-		(at 156.21 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a865ff85-6695-4b9c-9642-7bc04af03c1b")
-	)
-	(junction
 		(at 111.76 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5299,12 +5251,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bbef2dbc-0a20-4020-8210-442a6ab37162")
-	)
-	(junction
-		(at 146.05 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5ee99f8-b2f1-46c7-a98d-624d007441ef")
 	)
 	(junction
 		(at 53.34 55.88)
@@ -5459,6 +5405,10 @@
 		(uuid "b54c9ed3-dab9-4395-8f32-4c883cb90359")
 	)
 	(no_connect
+		(at 121.92 63.5)
+		(uuid "b8ce7ef6-dd8b-4ae9-a901-2036aca381aa")
+	)
+	(no_connect
 		(at 214.63 62.23)
 		(uuid "baf2fc73-634b-44e8-90ce-74facc277265")
 	)
@@ -5485,6 +5435,10 @@
 	(no_connect
 		(at 43.18 125.73)
 		(uuid "dfd84f0a-2d9c-4b19-8e37-f87c6524b3ef")
+	)
+	(no_connect
+		(at 121.92 60.96)
+		(uuid "eadd2880-7b17-4cff-9869-502659a9054e")
 	)
 	(no_connect
 		(at 50.8 68.58)
@@ -5721,6 +5675,16 @@
 			(type default)
 		)
 		(uuid "319b8932-3766-4911-b984-8be912526433")
+	)
+	(wire
+		(pts
+			(xy 95.25 63.5) (xy 99.06 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36651f65-efc0-409a-9840-ce14c585fd28")
 	)
 	(wire
 		(pts
@@ -6441,6 +6405,16 @@
 			(type default)
 		)
 		(uuid "a49a2bf6-608b-4438-a490-bb19fb1f68ef")
+	)
+	(wire
+		(pts
+			(xy 95.25 60.96) (xy 99.06 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a788cf8a-750b-4543-9a2e-a46fc4a2dda0")
 	)
 	(wire
 		(pts
@@ -7568,7 +7542,7 @@
 	)
 	(global_label "USB_N"
 		(shape input)
-		(at 99.06 60.96 180)
+		(at 95.25 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7578,7 +7552,7 @@
 		)
 		(uuid "6ce55bf6-ab41-4cfe-804d-5b113334c977")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.9667 60.96 0)
+			(at 86.1567 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7590,7 +7564,7 @@
 			)
 		)
 		(property "VBAT" ""
-			(at 99.06 64.8018 0)
+			(at 95.25 64.8018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8000,7 +7974,7 @@
 	)
 	(global_label "USB_P"
 		(shape input)
-		(at 99.06 63.5 180)
+		(at 95.25 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8010,7 +7984,7 @@
 		)
 		(uuid "e15a0096-792a-4d74-b490-e6b94d065ce6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.0272 63.5 0)
+			(at 86.2172 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8022,7 +7996,7 @@
 			)
 		)
 		(property "VBAT" ""
-			(at 99.06 67.3418 0)
+			(at 95.25 67.3418 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8286,7 +8260,7 @@
 		(dnp no)
 		(uuid "0c020312-6ddc-487b-9c79-b871638ff7d0")
 		(property "Reference" "C8"
-			(at 159.004 49.784 0)
+			(at 160.782 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8297,7 +8271,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 158.242 51.816 0)
+			(at 160.02 51.816 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8657,7 +8631,7 @@
 		(dnp no)
 		(uuid "19bdeae6-3812-466e-8ffb-b161e34b2de7")
 		(property "Reference" "U4"
-			(at 115.57 68.5801 0)
+			(at 119.38 77.216 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8668,7 +8642,7 @@
 			)
 		)
 		(property "Value" "ESD7104MUTAG"
-			(at 115.57 66.0401 0)
+			(at 119.38 74.676 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8827,6 +8801,12 @@
 		)
 		(pin "8"
 			(uuid "04e5abe2-2e55-4b27-8268-342f8e29917a")
+		)
+		(pin "10"
+			(uuid "ff3a6761-6320-4c5f-bc0d-81ca09c5a89f")
+		)
+		(pin "9"
+			(uuid "f5d8502e-9914-40fa-a1df-bed173326715")
 		)
 		(instances
 			(project "ESP32_S3mini"
@@ -9099,92 +9079,6 @@
 			(project "ESP32_S3mini"
 				(path "/f3e1dcc3-191c-4586-9a47-e11b1fd8fbd8"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_MEC_5E")
-		(at 151.13 48.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "29c8a10b-bff9-4863-a740-9284d6a123c1")
-		(property "Reference" "SW1"
-			(at 151.13 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RESET"
-			(at 151.13 40.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810"
-			(at 151.13 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5E.pdf"
-			(at 151.13 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
-			(at 151.13 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "29499c48-1ef5-4c48-9e28-bfffb6998515")
-		)
-		(pin "4"
-			(uuid "c6218fd1-49c2-4e56-b17b-b75740408a91")
-		)
-		(pin "3"
-			(uuid "9d3e265e-ff69-42f9-ad8f-861b2182e957")
-		)
-		(pin "1"
-			(uuid "acf2c6cb-4a0e-481c-8390-491d0e9ebdbb")
-		)
-		(instances
-			(project "ESP32_S3mini"
-				(path "/f3e1dcc3-191c-4586-9a47-e11b1fd8fbd8"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -10724,92 +10618,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_MEC_5E")
-		(at 151.13 58.42 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8754f116-0065-489c-b36d-938ef5300824")
-		(property "Reference" "SW2"
-			(at 151.13 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BOOT"
-			(at 151.13 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810"
-			(at 151.13 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5E.pdf"
-			(at 151.13 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "MEC 5E single pole normally-open tactile switch"
-			(at 151.13 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "52b03e86-5a07-4fed-ae84-c4ac09f82c7c")
-		)
-		(pin "4"
-			(uuid "08aab13a-be1c-46f0-b738-0b9df1016038")
-		)
-		(pin "3"
-			(uuid "bf59bd88-6742-4c7f-b1df-bd987b07f9d2")
-		)
-		(pin "1"
-			(uuid "cd98555c-126e-4a91-9746-364861202ffe")
-		)
-		(instances
-			(project "ESP32_S3mini"
-				(path "/f3e1dcc3-191c-4586-9a47-e11b1fd8fbd8"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Barrel_Jack")
 		(at 93.98 34.29 0)
 		(unit 1)
@@ -10966,6 +10774,166 @@
 			(project "ESP32_S3mini"
 				(path "/f3e1dcc3-191c-4586-9a47-e11b1fd8fbd8"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 151.13 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8f6957d3-5490-4e89-9e24-2171c7ae82c3")
+		(property "Reference" "SW4"
+			(at 151.13 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 151.13 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810"
+			(at 151.13 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 151.13 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fba6b68e-d5c9-439d-b391-24e8182b9e75")
+		)
+		(pin "1"
+			(uuid "c58e636c-c42f-48e4-a238-f664af167d1b")
+		)
+		(instances
+			(project "ESP32_S3mini"
+				(path "/f3e1dcc3-191c-4586-9a47-e11b1fd8fbd8"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 151.13 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c1993b4-053c-45f6-b387-b1734980a61e")
+		(property "Reference" "SW3"
+			(at 151.13 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 151.13 43.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810"
+			(at 151.13 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 151.13 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f8524bc8-60ef-40e1-b3c9-bf2c85ba9641")
+		)
+		(pin "1"
+			(uuid "5054d442-1208-47d4-b25a-53d52f4cfaf7")
+		)
+		(instances
+			(project "ESP32_S3mini"
+				(path "/f3e1dcc3-191c-4586-9a47-e11b1fd8fbd8"
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -12238,7 +12206,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 257.81 62.23 0)
 			(hide yes)
 			(show_name no)
