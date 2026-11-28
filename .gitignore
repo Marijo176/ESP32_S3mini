@@ -10,3 +10,26 @@ __Previews/
 *.LOG
 *.bak
 *.~*
+# KiCad local settings
+*.kicad_prl
+
+# Lock files
+*.lck
+
+# Backup files
+*.bak
+*.bck
+*-backups/
+
+# Cache files
+fp-info-cache
+
+# Local history
+.history/
+
+# Temporary files
+*.tmp
+
+# OS generated files
+Thumbs.db
+.DS_Store
