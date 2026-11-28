@@ -1,4 +1,9 @@
 # ESP32-S3-MINI Development Board
+<p align="center">
+  <img src="images/pcb-3d-top.png" height="250">
+  <img src="images/pcb-3d-bottom.png" height="250">
+</p>
+
 
 ## Overview
 
@@ -28,3 +33,15 @@ Custom ESP32-S3-MINI development board designed in KiCad for wireless embedded s
 | Input voltage | 5 V / single-cell Li-ion or LiPo battery |
 | Operating voltage | 3.3 V |
 | Design software | KiCad |
+
+## PCB Layout
+
+<p align="center">
+  <img src="images/pcb-layout.png" width="80%">
+</p>
+
+## Schematic
+
+<p align="center">
+  <img src="images/schematic.png" width="100%">
+</p>
